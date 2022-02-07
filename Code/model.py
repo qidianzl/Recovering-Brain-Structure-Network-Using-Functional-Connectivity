@@ -200,6 +200,7 @@ class CNNGenerator2(nn.Module):
         self.dropout = nn.Dropout(dropout)
         self.Linear1 = nn.Linear(3*3*256, in_feature)
         self.Linear2 = nn.Linear(3*3*256, in_feature)
+        # atlas1: 3*3*256; atlas2: 256
 
 
     def forward(self, topo, func_matrix, batchSize, isTest=False):
