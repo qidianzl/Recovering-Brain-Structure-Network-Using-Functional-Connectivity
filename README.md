@@ -24,7 +24,7 @@ This file is the preprocessing and normalization of the data. All the details ha
 #### train.py
 You need to run this file to start. All the hyper-parameters can be defined in this file.
 
-Run `python ./train.py -atlas='atlas2' -gpu_id=1`. 
+Run `python ./train.py -atlas='atlas1' -gpu_id=1`. 
 
 Tested with:
 - PyTorch 1.9.0
