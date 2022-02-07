@@ -3,7 +3,6 @@
 ![framework](main3.png)
 
 ### Papers:
-
 This repository provides a PyTorch implementation of the models adopted in the two papers:
 
 - Zhang, Lu, Li Wang, and Dajiang Zhu. "Recovering brain structural connectivity from functional connectivity via multi-gcn based generative adversarial network." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2020.
@@ -13,7 +12,6 @@ The first paper proposes the Multi-GCN GAN model and structure preserving loss, 
 
 
 ### Code:
-
 #### dataloader.py
 This file includes the preprocessing and normalization operations of the data. All the details have been introduced in the two papers. The only element needs to pay attention to is the empty list, which records the ids of the empty ROIs of specific atlases. For example, there are two brain regions in Destrieux Atlas are empty (Medial_wall for both left and right hemispheres). Therefore the corresponding two rows and columns in the generated SC and FC are zeros. We deleted these rows and columns.
 
@@ -30,11 +28,9 @@ Tested with:
 - Python 3.7.0
 
 ### Data:
-
-We used 1064 subjects from HCP dataset and 132 subjects from ADNI dataset in our research. For each subject we generated the structural connectivity (SC) and the functional connectivity (FC) matrix. All of the connectivity matrices can be shared for research purpose. Please contact the author to obtain the data by sending email to lu.zhang2@mavs.uta.edu.
+We used 1064 subjects from HCP dataset and 132 subjects from ADNI dataset in our research. For each subject, we generated the structural connectivity (SC) and the functional connectivity (FC) matrices. All of the connectivity matrices can be shared for research purpose. Please contact the author to get the data by sending email to lu.zhang2@mavs.uta.edu.
 
 ### Citation:
-
 If you used the code or data of this project,  please cite:
 
     @inproceedings{zhang2020recovering,
