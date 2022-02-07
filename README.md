@@ -9,6 +9,16 @@ This is the source code of the following two papers:
 
 Paper [1] proposes the Multi-GCN GAN model and structure preserving loss, paper [2] further expands the research on different datasets, different functional connectivity generation methods and different models.
 
+DETAILS:
+
+model.py
+
+We implemented different models here, including two different CNN-based generators, GCN-based generator and GCN-based discriminator. The learnable combination coefficients of multiple GCNs (theta) also can be initialized by different values in this file. We also compared different topology updating methods. We have annotated in this file about how to adopt different methods.
+
+train.py
+
+
+
 DATA
 
 We used 1064 subjects from HCP dataset and 132 subjects from ADNI dataset in our research. For each subject we generated the structural connectivity (SC) and the functional connectivity (FC). All of the connectivity matrices can be shared for research purpose. Please contack the author to obtain the data by sending email to lu.zhang2@mavs.uta.edu.
