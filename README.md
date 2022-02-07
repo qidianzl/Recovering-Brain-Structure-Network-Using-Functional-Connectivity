@@ -1,5 +1,5 @@
 # Recovering-Brain-Structure-Network-Using-Functional-Connectivity
-
+### Framework:
 ![framework](main3.png)
 
 ### Papers:
@@ -15,16 +15,13 @@ Paper [1] proposes the Multi-GCN GAN model and structure preserving loss, paper 
 
 ### Code:
 
-model.py
+#### model.py
+We implemented different models here, including two different CNN-based generators, GCN-based generator and GCN-based discriminator. You can choose different models in train.py file. The different topology updating methods and differnet initializations of learnable combination coefficients of multiple GCNs (theta) can be directly changed in this file, and we have annotated in this file about how to change them.
 
-We implemented different models here, including two different CNN-based generators, GCN-based generator and GCN-based discriminator. You can choose different model in train.py file. The different topology updating methods and differnet initializations of learnable combination coefficients of multiple GCNs (theta) can be directly changed in this file, and We have annotated in this file about how to change them.
-
-dataloader.py
-
+#### dataloader.py
 This file is the preprocessing and normalization of the data. All the details have been introduced in the two papers except the empty list. There are two ids in the empty list for each atlas. Each id corresponds to one brain region which is an empty ROI without any voxels. Therefore the corresponding two rows and columns in the generated SC and FC are zeros. We deleted the these rows and columns.
 
-train.py
-
+#### train.py
 You need to run this file to start. All the hyper-parameters can be defined in this file.
 
 Run `python ./train.py -atlas='atlas2' -gpu_id=1`. 
@@ -33,14 +30,9 @@ Tested with:
 - PyTorch 1.9.0
 - Python 3.7.0
 
-
-
 ### Data:
 
 We used 1064 subjects from HCP dataset and 132 subjects from ADNI dataset in our research. For each subject we generated the structural connectivity (SC) and the functional connectivity (FC). All of the connectivity matrices can be shared for research purpose. Please contack the author to obtain the data by sending email to lu.zhang2@mavs.uta.edu.
-
-
-
 
 ### Citation:
 
