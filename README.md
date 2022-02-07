@@ -16,7 +16,16 @@ The first paper proposes the Multi-GCN GAN model and structure preserving loss, 
 This file includes the preprocessing and normalization operations of the data. All the details have been introduced in the two papers. The only element needs to pay attention to is the empty list, which records the ids of the empty ROIs of specific atlases. For example, there are two brain regions in Destrieux Atlas are empty (Medial_wall for both left and right hemispheres). Therefore the corresponding two rows and columns in the generated SC and FC are zeros. We deleted these rows and columns.
 
 #### model.py
-We implemented different models in this file, including two different CNN-based generators, GCN-based generator and GCN-based discriminator. You can choose different models when run the train.py. The different topology updating methods and differnet initializations of learnable combination coefficients of multiple GCNs (theta) can be directly changed in this file, and we have annotated in this file about how to change them.
+We implemented different models in this file, including two different CNN-based generators, Multi-GCN-based generator and GCN-based discriminator. Different models can be chosen by directly calling the corresponding classes when run the train.py file. Different model architectures are as follows:
+- CNN (CNN-based generator, MSE loss and PCC loss)
+- Multi-GCN (Multi-GCN-based generator, MSE loss and PCC loss)
+- CNN based GAN (CNN-based generator and GCN-based discriminator, SP loss)
+- MGCN-GAN (Multi-GCN-based generator and GCN-based discriminator, SP loss)
+
+When adopting the proposed MGCN-GAN architecture, the different topology updating methods and differnet initializations of learnable combination coefficients of multiple GCNs (theta) can be directly changed in this file, and we have annotated in this file about how to change them.
+
+#### Loss_custom.py
+The proposed SP loss includes three components: GAN loss, MSE loss and PCC loss. In this file, we implemented the PCC loss. For the MSE loss and GAN loss, we directly call the loss functions from torch.nn module in train.py file. 
 
 #### train.py
 You need to run this file to start. All the hyper-parameters can be defined in this file.
