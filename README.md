@@ -4,7 +4,7 @@
 
 ### Papers:
 
-This repository provides a PyTorch implementation of the models adopted in the two paper:
+This repository provides a PyTorch implementation of the models adopted in the two papers:
 
 [1] Zhang, Lu, Li Wang, and Dajiang Zhu. "Recovering brain structural connectivity from functional connectivity via multi-gcn based generative adversarial network." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2020.
 
