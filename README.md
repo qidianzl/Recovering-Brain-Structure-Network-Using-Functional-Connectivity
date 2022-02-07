@@ -31,7 +31,7 @@ Tested with:
 
 ### Data:
 
-We used 1064 subjects from HCP dataset and 132 subjects from ADNI dataset in our research. For each subject we generated the structural connectivity (SC) and the functional connectivity (FC). All of the connectivity matrices can be shared for research purpose. Please contack the author to obtain the data by sending email to lu.zhang2@mavs.uta.edu.
+We used 1064 subjects from HCP dataset and 132 subjects from ADNI dataset in our research. For each subject we generated the structural connectivity (SC) and the functional connectivity (FC) matrix. All of the connectivity matrices can be shared for research purpose. Please contact the author to obtain the data by sending email to lu.zhang2@mavs.uta.edu.
 
 ### Citation:
 
