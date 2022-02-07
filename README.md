@@ -1,5 +1,5 @@
 # Recovering-Brain-Structure-Network-Using-Functional-Connectivity
-CODE
+1. Papers
 
 This is the source code of the following two papers:
 
@@ -9,7 +9,9 @@ This is the source code of the following two papers:
 
 Paper [1] proposes the Multi-GCN GAN model and structure preserving loss, paper [2] further expands the research on different datasets, different functional connectivity generation methods and different models.
 
-DETAILS:
+
+
+2. Code
 
 model.py
 
@@ -24,12 +26,16 @@ train.py
 You need to run this file to start. All the hyper-parameters can be defined in this file.
 
 
-DATA
+
+
+3. Data
 
 We used 1064 subjects from HCP dataset and 132 subjects from ADNI dataset in our research. For each subject we generated the structural connectivity (SC) and the functional connectivity (FC). All of the connectivity matrices can be shared for research purpose. Please contack the author to obtain the data by sending email to lu.zhang2@mavs.uta.edu.
 
 
-Citation:
+
+
+4. Citation:
 
 If you used the code or data of this project, please cite the two papers:
 
@@ -41,4 +47,5 @@ If you used the code or data of this project, please cite the two papers:
   year={2020},
   organization={Springer}
 }
+
 
