@@ -18,7 +18,7 @@ The first paper proposes the Multi-GCN GAN model and structure preserving loss, 
 This file includes the preprocessing and normalization operations of the data. All the details have been introduced in the two paperst. The only item need to pay attention to is the empty list, which records the ids of the empty ROIs of specific atlases. For example, there are two brain regions in Destrieux Atlas are empty (Medial_wall for both left and right hemispheres). Therefore the corresponding two rows and columns in the generated SC and FC are zeros. We deleted these rows and columns.
 
 #### model.py
-We implemented different models here, including two different CNN-based generators, GCN-based generator and GCN-based discriminator. You can choose different models in train.py file. The different topology updating methods and differnet initializations of learnable combination coefficients of multiple GCNs (theta) can be directly changed in this file, and we have annotated in this file about how to change them.
+We implemented different models here, including two different CNN-based generators, GCN-based generator and GCN-based discriminator. You can choose different models. The different topology updating methods and differnet initializations of learnable combination coefficients of multiple GCNs (theta) can be directly changed in this file, and we have annotated in this file about how to change them.
 
 #### train.py
 You need to run this file to start. All the hyper-parameters can be defined in this file.
