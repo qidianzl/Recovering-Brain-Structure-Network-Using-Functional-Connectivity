@@ -4,13 +4,13 @@
 
 ### Papers:
 
-This is the source code of the following two papers:
+This repository provides a PyTorch implementation of the models adopted in the two paper:
 
 [1] Zhang, Lu, Li Wang, and Dajiang Zhu. "Recovering brain structural connectivity from functional connectivity via multi-gcn based generative adversarial network." International Conference on Medical Image Computing and Computer-Assisted Intervention. Springer, Cham, 2020.
 
 [2] Zhang, Lu, Li Wang, and Dajiang Zhu. "Predicting Brain Structure Network using Functional Connectivity."  in process.
 
-Paper [1] proposes the Multi-GCN GAN model and structure preserving loss, paper [2] further expands the research on different datasets, different functional connectivity generation methods and different models, and obtains new results.
+Paper [1] proposes the Multi-GCN GAN model and structure preserving loss, paper [2] further expands the research on different datasets, different atlases, different functional connectivity generation methods, different models and new evaluation measures. New results have been obtained.
 
 
 ### Code:
