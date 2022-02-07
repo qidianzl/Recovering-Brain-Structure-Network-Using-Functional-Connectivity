@@ -25,7 +25,11 @@ We implemented different models in this file, including two different CNN-based 
 When adopting the proposed MGCN-GAN architecture, the different topology updating methods and differnet initializations of learnable combination coefficients of multiple GCNs (theta) can be directly changed in this file, and we have annotated in this file about how to change them. For Linear regression model, we directly call the *LinearRegression* from *sklearn.linear_model* package.
 
 #### Loss_custom.py
-The proposed SP loss includes three components: GAN loss, MSE loss and PCC loss. In this file, we implemented the PCC loss. For the MSE loss and GAN loss, we directly call the loss functions from torch.nn module in train.py file. 
+The proposed SP loss includes three components: GAN loss, MSE loss and PCC loss. In this file, we implemented the PCC loss. For the MSE loss and GAN loss, we directly call the loss functions from torch.nn module in train.py file. By directly editing train.py file, different loss functions can be compared, including:
+- GAN Loss
+- MSE+GAN loss
+- PCC+GAN loss
+- SP loss
 
 #### train.py
 You need to run this file to start. All the hyper-parameters can be defined in this file.
