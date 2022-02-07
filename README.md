@@ -1,4 +1,7 @@
 # Recovering-Brain-Structure-Network-Using-Functional-Connectivity
+
+![framework](main3.png)
+
 ### Papers:
 
 This is the source code of the following two papers:
