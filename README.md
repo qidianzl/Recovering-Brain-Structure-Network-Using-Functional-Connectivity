@@ -10,7 +10,7 @@ This is the source code of the following two papers:
 
 [2] Zhang, Lu, Li Wang, and Dajiang Zhu. "Predicting Brain Structure Network using Functional Connectivity."  in process.
 
-Paper [1] proposes the Multi-GCN GAN model and structure preserving loss, paper [2] further expands the research on different datasets, different functional connectivity generation methods and different models.
+Paper [1] proposes the Multi-GCN GAN model and structure preserving loss, paper [2] further expands the research on different datasets, different functional connectivity generation methods and different models, and obtained new results.
 
 
 ### Code:
