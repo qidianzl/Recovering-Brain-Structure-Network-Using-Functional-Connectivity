@@ -54,5 +54,15 @@ If you used the code or data of this project,  please cite:
       year={2020},
       organization={Springer}
     }
+    
+    @article{zhang2022predicting,
+      title={Predicting brain structural network using functional connectivity},
+      author={Zhang, Lu and Wang, Li and Zhu, Dajiang and Alzheimer's Disease Neuroimaging Initiative and others},
+      journal={Medical Image Analysis},
+      volume={79},
+      pages={102463},
+      year={2022},
+      publisher={Elsevier}
+    }
 
 
